@@ -29,11 +29,7 @@ class ChangeColorSampleViewController: UIViewController {
             return
         }
 
-        guard let path = Bundle.main.path(forResource: "yes", ofType: "json") else {
-            return
-        }
-
-        let animationView = LOTAnimationView(filePath: path)
+        let animationView = LOTAnimationView(name: "heart")
         animationView.frame = animationView.sceneModel?.compBounds ?? view.bounds
 
         animationView.loopAnimation = true

@@ -29,11 +29,7 @@ class SimpleSampleViewController: UIViewController {
             return
         }
 
-        guard let path = Bundle.main.path(forResource: "yes", ofType: "json") else {
-            return
-        }
-
-        let animationView = LOTAnimationView(filePath: path)
+        let animationView = LOTAnimationView(name: "yes")
         animationView.frame = animationView.sceneModel?.compBounds ?? view.bounds
 
         // animationView.loopAnimation = loop
