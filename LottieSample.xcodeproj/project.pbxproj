@@ -24,6 +24,8 @@
 		F3E27C8620C7E4C3003F3DBB /* call.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C8320C7E4C3003F3DBB /* call.json */; };
 		F3E27C8720C7E4C3003F3DBB /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C8420C7E4C3003F3DBB /* heart.json */; };
 		F3E27C8820C7E4C3003F3DBB /* icon.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C8520C7E4C3003F3DBB /* icon.json */; };
+		F3E27C8A20C82499003F3DBB /* ChangeImageSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C8920C82498003F3DBB /* ChangeImageSampleViewController.swift */; };
+		F3E27C8C20C824A7003F3DBB /* ChangeImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C8B20C824A7003F3DBB /* ChangeImage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		F3E27C8320C7E4C3003F3DBB /* call.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = call.json; sourceTree = "<group>"; };
 		F3E27C8420C7E4C3003F3DBB /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		F3E27C8520C7E4C3003F3DBB /* icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icon.json; sourceTree = "<group>"; };
+		F3E27C8920C82498003F3DBB /* ChangeImageSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeImageSampleViewController.swift; sourceTree = "<group>"; };
+		F3E27C8B20C824A7003F3DBB /* ChangeImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeImage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E27C8020C7B47E003F3DBB /* ChangeColorSampleViewController.swift */,
+				F3E27C8920C82498003F3DBB /* ChangeImageSampleViewController.swift */,
 				F3E27C7F20C7B47D003F3DBB /* ControlSampleViewController.swift */,
 				F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */,
 				F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */,
@@ -109,6 +114,7 @@
 				F3E27C7720C795C4003F3DBB /* FromAir.storyboard */,
 				F3E27C7B20C7B457003F3DBB /* Control.storyboard */,
 				F3E27C7D20C7B462003F3DBB /* ChangeColor.storyboard */,
+				F3E27C8B20C824A7003F3DBB /* ChangeImage.storyboard */,
 				F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */,
 			);
 			path = resource;
@@ -194,6 +200,7 @@
 			files = (
 				F3E27C6620C77BF7003F3DBB /* Main.storyboard in Resources */,
 				F3E27C6C20C78CF4003F3DBB /* yes.json in Resources */,
+				F3E27C8C20C824A7003F3DBB /* ChangeImage.storyboard in Resources */,
 				F3E27C8820C7E4C3003F3DBB /* icon.json in Resources */,
 				F3E27C7E20C7B462003F3DBB /* ChangeColor.storyboard in Resources */,
 				F3E27C7C20C7B457003F3DBB /* Control.storyboard in Resources */,
@@ -238,6 +245,7 @@
 			files = (
 				F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */,
 				F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */,
+				F3E27C8A20C82499003F3DBB /* ChangeImageSampleViewController.swift in Sources */,
 				F3E27C8220C7B47E003F3DBB /* ChangeColorSampleViewController.swift in Sources */,
 				F3E27C8120C7B47E003F3DBB /* ControlSampleViewController.swift in Sources */,
 				F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */,

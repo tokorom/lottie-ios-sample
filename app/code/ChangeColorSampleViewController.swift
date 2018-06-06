@@ -35,6 +35,8 @@ class ChangeColorSampleViewController: UIViewController {
         animationView.loopAnimation = true
         view.addSubview(animationView)
         self.animationView = animationView
+
+        animationView.logHierarchyKeypaths()
     }
 
     private func changeAnimationColor(named colorName: String) {
