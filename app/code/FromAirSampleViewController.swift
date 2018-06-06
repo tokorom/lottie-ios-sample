@@ -15,17 +15,19 @@ class FromAirSampleViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        downloadAnimationJSON { [weak self] filePath in
+        let animationJSON = "https://raw.githubusercontent.com/tokorom/lottie-ios-sample/master/app/resource/animations/yes.json"
+
+        guard let url = URL(string: animationJSON) else {
+            return
+        }
+
+        downloadAnimationJSON(from: url) { [weak self] filePath in
             self?.setupAnimation(with: filePath)
             self?.animationView?.play()
         }
     }
 
-    private func downloadAnimationJSON(completion: @escaping (String) -> Void) {
-        guard let url = URL(string: "https://raw.githubusercontent.com/tokorom/lottie-ios-sample/master/app/resource/animations/yes.json") else {
-            return
-        }
-
+    private func downloadAnimationJSON(from url: URL, completion: @escaping (String) -> Void) {
         let task = URLSession.shared.downloadTask(with: url) { url, _, error in
             guard let filePath = url?.path else {
                 print("handle error: \(String(describing: error))")

@@ -33,9 +33,6 @@ class SimpleSampleViewController: UIViewController {
             return
         }
 
-        // let animationView = LOTAnimationView(name: "yes")
-        // animationView.frame = view.bounds
-
         let animationView = LOTAnimationView(filePath: path)
         animationView.frame = animationView.sceneModel?.compBounds ?? view.bounds
 
