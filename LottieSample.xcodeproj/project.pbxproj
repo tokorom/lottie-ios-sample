@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3E27C6220C77BF7003F3DBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C5B20C77BF7003F3DBB /* ViewController.swift */; };
 		F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */; };
 		F3E27C6420C77BF7003F3DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C5E20C77BF7003F3DBB /* LaunchScreen.storyboard */; };
 		F3E27C6520C77BF7003F3DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */; };
 		F3E27C6620C77BF7003F3DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6020C77BF7003F3DBB /* Main.storyboard */; };
+		F3E27C6C20C78CF4003F3DBB /* yes.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6920C78CF4003F3DBB /* yes.json */; };
+		F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */; };
+		F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */; };
+		F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E27C7420C78E3F003F3DBB /* Lottie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3E27C4420C77B1F003F3DBB /* LottieSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3E27C5B20C77BF7003F3DBB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E27C5E20C77BF7003F3DBB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3E27C6020C77BF7003F3DBB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3E27C6120C77BF7003F3DBB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E27C6920C78CF4003F3DBB /* yes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = yes.json; sourceTree = "<group>"; };
+		F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
+		F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSampleViewController.swift; sourceTree = "<group>"; };
+		F3E27C7420C78E3F003F3DBB /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				F3E27C5920C77BF7003F3DBB /* app */,
 				F3E27C4520C77B1F003F3DBB /* Products */,
+				F3E27C7320C78E3F003F3DBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,8 +72,8 @@
 		F3E27C5A20C77BF7003F3DBB /* code */ = {
 			isa = PBXGroup;
 			children = (
-				F3E27C5B20C77BF7003F3DBB /* ViewController.swift */,
 				F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */,
+				F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */,
 			);
 			path = code;
 			sourceTree = "<group>";
@@ -73,11 +81,29 @@
 		F3E27C5D20C77BF7003F3DBB /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				F3E27C6820C78CF4003F3DBB /* animations */,
 				F3E27C5E20C77BF7003F3DBB /* LaunchScreen.storyboard */,
-				F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */,
 				F3E27C6020C77BF7003F3DBB /* Main.storyboard */,
+				F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */,
+				F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		F3E27C6820C78CF4003F3DBB /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				F3E27C6920C78CF4003F3DBB /* yes.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		F3E27C7320C78E3F003F3DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3E27C7420C78E3F003F3DBB /* Lottie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +116,7 @@
 				F3E27C4020C77B1F003F3DBB /* Sources */,
 				F3E27C4120C77B1F003F3DBB /* Frameworks */,
 				F3E27C4220C77B1F003F3DBB /* Resources */,
+				F3E27C7620C78E85003F3DBB /* Copy frameworks for Carthage */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E27C6620C77BF7003F3DBB /* Main.storyboard in Resources */,
+				F3E27C6C20C78CF4003F3DBB /* yes.json in Resources */,
+				F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */,
 				F3E27C6520C77BF7003F3DBB /* Assets.xcassets in Resources */,
 				F3E27C6420C77BF7003F3DBB /* LaunchScreen.storyboard in Resources */,
 			);
@@ -146,13 +175,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3E27C7620C78E85003F3DBB /* Copy frameworks for Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			name = "Copy frameworks for Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3E27C4020C77B1F003F3DBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */,
 				F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */,
-				F3E27C6220C77BF7003F3DBB /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +331,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AXCX2DUCQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,6 +353,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AXCX2DUCQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
