@@ -36,4 +36,31 @@ class ChangeColorSampleViewController: UIViewController {
         view.addSubview(animationView)
         self.animationView = animationView
     }
+
+    private func changeAnimationColor(named colorName: String) {
+        guard let animationView = animationView else {
+            return
+        }
+
+        guard let color = UIColor(named: colorName) else {
+            assertionFailure("Invalid color")
+            return
+        }
+
+        let keypath = LOTKeypath(string: "**.Fill 1.Color")
+        let callback = LOTColorValueCallback(color: color.cgColor)
+        animationView.setValueDelegate(callback, for: keypath)
+    }
+
+    @IBAction func blueColorAction(sender: AnyObject) {
+        changeAnimationColor(named: "Blue")
+    }
+
+    @IBAction func greenColorAction(sender: AnyObject) {
+        changeAnimationColor(named: "Green")
+    }
+
+    @IBAction func yellowColorAction(sender: AnyObject) {
+        changeAnimationColor(named: "Yellow")
+    }
 }
