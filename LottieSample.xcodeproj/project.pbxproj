@@ -15,6 +15,8 @@
 		F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */; };
 		F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */; };
 		F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E27C7420C78E3F003F3DBB /* Lottie.framework */; };
+		F3E27C7820C795C4003F3DBB /* FromAir.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7720C795C4003F3DBB /* FromAir.storyboard */; };
+		F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Simple.storyboard; sourceTree = "<group>"; };
 		F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSampleViewController.swift; sourceTree = "<group>"; };
 		F3E27C7420C78E3F003F3DBB /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		F3E27C7720C795C4003F3DBB /* FromAir.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FromAir.storyboard; sourceTree = "<group>"; };
+		F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromAirSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */,
 				F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */,
+				F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */,
 			);
 			path = code;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				F3E27C5E20C77BF7003F3DBB /* LaunchScreen.storyboard */,
 				F3E27C6020C77BF7003F3DBB /* Main.storyboard */,
 				F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */,
+				F3E27C7720C795C4003F3DBB /* FromAir.storyboard */,
 				F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */,
 			);
 			path = resource;
@@ -170,6 +176,7 @@
 				F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */,
 				F3E27C6520C77BF7003F3DBB /* Assets.xcassets in Resources */,
 				F3E27C6420C77BF7003F3DBB /* LaunchScreen.storyboard in Resources */,
+				F3E27C7820C795C4003F3DBB /* FromAir.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */,
+				F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */,
 				F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
