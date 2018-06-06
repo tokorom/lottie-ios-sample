@@ -17,6 +17,10 @@
 		F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E27C7420C78E3F003F3DBB /* Lottie.framework */; };
 		F3E27C7820C795C4003F3DBB /* FromAir.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7720C795C4003F3DBB /* FromAir.storyboard */; };
 		F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */; };
+		F3E27C7C20C7B457003F3DBB /* Control.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7B20C7B457003F3DBB /* Control.storyboard */; };
+		F3E27C7E20C7B462003F3DBB /* ChangeColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7D20C7B462003F3DBB /* ChangeColor.storyboard */; };
+		F3E27C8120C7B47E003F3DBB /* ControlSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7F20C7B47D003F3DBB /* ControlSampleViewController.swift */; };
+		F3E27C8220C7B47E003F3DBB /* ChangeColorSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C8020C7B47E003F3DBB /* ChangeColorSampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		F3E27C7420C78E3F003F3DBB /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		F3E27C7720C795C4003F3DBB /* FromAir.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FromAir.storyboard; sourceTree = "<group>"; };
 		F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromAirSampleViewController.swift; sourceTree = "<group>"; };
+		F3E27C7B20C7B457003F3DBB /* Control.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Control.storyboard; sourceTree = "<group>"; };
+		F3E27C7D20C7B462003F3DBB /* ChangeColor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeColor.storyboard; sourceTree = "<group>"; };
+		F3E27C7F20C7B47D003F3DBB /* ControlSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlSampleViewController.swift; sourceTree = "<group>"; };
+		F3E27C8020C7B47E003F3DBB /* ChangeColorSampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorSampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,8 @@
 		F3E27C5A20C77BF7003F3DBB /* code */ = {
 			isa = PBXGroup;
 			children = (
+				F3E27C8020C7B47E003F3DBB /* ChangeColorSampleViewController.swift */,
+				F3E27C7F20C7B47D003F3DBB /* ControlSampleViewController.swift */,
 				F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */,
 				F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */,
 				F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */,
@@ -91,6 +101,8 @@
 				F3E27C6020C77BF7003F3DBB /* Main.storyboard */,
 				F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */,
 				F3E27C7720C795C4003F3DBB /* FromAir.storyboard */,
+				F3E27C7B20C7B457003F3DBB /* Control.storyboard */,
+				F3E27C7D20C7B462003F3DBB /* ChangeColor.storyboard */,
 				F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */,
 			);
 			path = resource;
@@ -173,6 +185,8 @@
 			files = (
 				F3E27C6620C77BF7003F3DBB /* Main.storyboard in Resources */,
 				F3E27C6C20C78CF4003F3DBB /* yes.json in Resources */,
+				F3E27C7E20C7B462003F3DBB /* ChangeColor.storyboard in Resources */,
+				F3E27C7C20C7B457003F3DBB /* Control.storyboard in Resources */,
 				F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */,
 				F3E27C6520C77BF7003F3DBB /* Assets.xcassets in Resources */,
 				F3E27C6420C77BF7003F3DBB /* LaunchScreen.storyboard in Resources */,
@@ -212,6 +226,8 @@
 			files = (
 				F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */,
 				F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */,
+				F3E27C8220C7B47E003F3DBB /* ChangeColorSampleViewController.swift in Sources */,
+				F3E27C8120C7B47E003F3DBB /* ControlSampleViewController.swift in Sources */,
 				F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
