@@ -60,6 +60,10 @@ class ControlSampleViewController: UIViewController {
     }
 
     @IBAction func playAction(sender: AnyObject) {
+        animationView?.completionBlock = { finished in
+            print("### finished: \(finished)")
+        }
+
         animationView?.play()
     }
 
