@@ -10,7 +10,7 @@ import Lottie
 class ControlSampleViewController: UIViewController {
     @IBOutlet weak var animationArea: UIView?
 
-    weak var animationView: LOTAnimationView?
+    weak var animationView: AnimationView?
 
     lazy var tableViewController: ControlSampleTableViewController = {
         for case let viewController as ControlSampleTableViewController in children {
@@ -44,8 +44,8 @@ class ControlSampleViewController: UIViewController {
             return
         }
 
-        let animationView = LOTAnimationView(name: "yes")
-        animationView.frame = animationView.sceneModel?.compBounds ?? view.bounds
+        let animationView = AnimationView(name: "yes")
+        animationView.frame = animationView.animation?.bounds ?? view.bounds
 
         view.addSubview(animationView)
         self.animationView = animationView
@@ -56,11 +56,9 @@ class ControlSampleViewController: UIViewController {
     }
 
     @IBAction func playAction(sender: AnyObject) {
-        animationView?.completionBlock = { finished in
+        animationView?.play { finished in
             print("### finished: \(finished)")
         }
-
-        animationView?.play()
     }
 
     @IBAction func pauseAction(sender: AnyObject) {
@@ -76,7 +74,7 @@ class ControlSampleViewController: UIViewController {
             return
         }
 
-        animationView.loopAnimation = `switch`.isOn
+        animationView.loopMode = `switch`.isOn ? .loop : .playOnce
     }
 
     @IBAction func reverseAction(`switch`: UISwitch) {
@@ -84,7 +82,7 @@ class ControlSampleViewController: UIViewController {
             return
         }
 
-        animationView.autoReverseAnimation = `switch`.isOn
+        animationView.loopMode = `switch`.isOn ? .autoReverse : .loop
     }
 
     @IBAction func speedAction(stepper: UIStepper) {

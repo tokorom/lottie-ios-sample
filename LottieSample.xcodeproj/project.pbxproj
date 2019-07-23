@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3B30BD522E6AB550069634F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F3B30BD422E6AB550069634F /* Lottie */; };
 		F3E27C6320C77BF7003F3DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C5C20C77BF7003F3DBB /* AppDelegate.swift */; };
 		F3E27C6420C77BF7003F3DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C5E20C77BF7003F3DBB /* LaunchScreen.storyboard */; };
 		F3E27C6520C77BF7003F3DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C5F20C77BF7003F3DBB /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		F3E27C6C20C78CF4003F3DBB /* yes.json in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6920C78CF4003F3DBB /* yes.json */; };
 		F3E27C7020C78D2C003F3DBB /* Simple.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C6F20C78D2C003F3DBB /* Simple.storyboard */; };
 		F3E27C7220C78D7F003F3DBB /* SimpleSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7120C78D7F003F3DBB /* SimpleSampleViewController.swift */; };
-		F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E27C7420C78E3F003F3DBB /* Lottie.framework */; };
 		F3E27C7820C795C4003F3DBB /* FromAir.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7720C795C4003F3DBB /* FromAir.storyboard */; };
 		F3E27C7A20C798B9003F3DBB /* FromAirSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E27C7920C798B8003F3DBB /* FromAirSampleViewController.swift */; };
 		F3E27C7C20C7B457003F3DBB /* Control.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E27C7B20C7B457003F3DBB /* Control.storyboard */; };
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E27C7520C78E3F003F3DBB /* Lottie.framework in Frameworks */,
+				F3B30BD522E6AB550069634F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,13 +149,15 @@
 				F3E27C4020C77B1F003F3DBB /* Sources */,
 				F3E27C4120C77B1F003F3DBB /* Frameworks */,
 				F3E27C4220C77B1F003F3DBB /* Resources */,
-				F3E27C7620C78E85003F3DBB /* Copy frameworks for Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LottieSample;
+			packageProductDependencies = (
+				F3B30BD422E6AB550069634F /* Lottie */,
+			);
 			productName = LottieSample;
 			productReference = F3E27C4420C77B1F003F3DBB /* LottieSample.app */;
 			productType = "com.apple.product-type.application";
@@ -184,6 +186,9 @@
 				Base,
 			);
 			mainGroup = F3E27C3B20C77B1F003F3DBB;
+			packageReferences = (
+				F3B30BD322E6AB550069634F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F3E27C4520C77B1F003F3DBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,29 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F3E27C7620C78E85003F3DBB /* Copy frameworks for Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
-			);
-			name = "Copy frameworks for Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Lottie.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3E27C4020C77B1F003F3DBB /* Sources */ = {
@@ -435,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3B30BD322E6AB550069634F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3B30BD422E6AB550069634F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3B30BD322E6AB550069634F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3E27C3C20C77B1F003F3DBB /* Project object */;
 }

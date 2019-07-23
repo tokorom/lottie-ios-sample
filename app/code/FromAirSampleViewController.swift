@@ -10,7 +10,7 @@ import Lottie
 class FromAirSampleViewController: UIViewController {
     @IBOutlet weak var animationArea: UIView?
 
-    weak var animationView: LOTAnimationView?
+    weak var animationView: AnimationView?
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -47,8 +47,8 @@ class FromAirSampleViewController: UIViewController {
             return
         }
 
-        let animationView = LOTAnimationView(filePath: filePath)
-        animationView.frame = animationView.sceneModel?.compBounds ?? view.bounds
+        let animationView = AnimationView(filePath: filePath)
+        animationView.frame = animationView.animation?.bounds ?? view.bounds
 
         view.addSubview(animationView)
         self.animationView = animationView
